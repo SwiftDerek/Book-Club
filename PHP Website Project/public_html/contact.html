@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+Derek Williams
+Assignment 10
+CSC 452
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Assignment 10</title>
+        <!--[if lt IE 9]>
+                <script src="js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- START HEADER -->
+            <header role="banner">
+                <img class="bookcollection" src="img/header.jpg" alt="Collection of Books">
+                <nav role="navigation">
+                    <ul class="nav-main">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="details.html">Details</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <h1 class="mainheading"> Contact Me </h1>
+            </header>
+            <!-- END HEADER -->
+
+            <!-- START MAIN CONTENT -->
+            <main role="main">
+                <section>
+                    <p> Please feel free to contact me with any questions or comments. 
+                        All fields below are required so that I am able to properly respond back.
+                    </p>
+                    <h3 style="color: red"> Please fill out all of the fields! </h3>
+                    <h2 class="contacttext"> Contact Derek Williams </h2>
+                    <form>
+                        <fieldset>
+                                <div class="row">
+                                    <label class="textlabel" for="first_name">First Name:</label>
+                                    <input type="text" id="first_name" name="first_name"
+                                           required="required" placeholder="First Name"/>
+                                </div>
+                                <div class="row">
+                                    <label class="textlabel" for="last_name">Last Name:</label>
+                                    <input type="text" id="last_name" name="last_name"
+                                           required="required" placeholder="Last Name"/>
+                                </div>
+                                <div class="row">
+                                    <label class="textlabel" for="email">Email:</label>
+                                    <input type="email" id="email" name="email"
+                                           required="required" placeholder="youremail@example.com"/>
+                                </div>
+                                <div class="row">
+                                    <label class="textlabel" for="telephone">Telephone:</label>
+                                    <input type="tel" id="telephone" name="telephone"
+                                           required="required" placeholder="XXX-XXX-XXXX"
+                                           pattern="\d{3}-\d{3}-\d{4}"/>
+                                </div>
+                                <div class="row">
+                                    <label for="message" class="textlabel">Message:</label>
+                                    <textarea id="message" name="message" placeholder="Questions/Comments"
+                                              required="required"></textarea>
+                                </div>
+                                <div class="row">
+                                    <label class="textlabel">Contact:</label>
+                                    <input type="radio" id="business" name="radio_contact" 
+                                           value="Business" checked="checked"/>
+                                    <label for="business">Business</label>
+                                    <input type="radio" id="individual" name="radio_contact"
+                                           value="Individual"/>
+                                    <label for="individual">Individual</label>
+                                </div>
+                                <div class="row">
+                                    <input type="submit" value="Submit" class="btnSubmit"/>
+                                </div>
+                            
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+            <!-- END MAIN CONTENT -->
+
+            <!-- START SIDE BAR -->
+            <div class="sidebar">
+                <aside class="recentbooks">
+                    <h2 id="recentbookstitle"> Recent books </h2>
+                    <ul class="links">
+                        <li><a href="books.html#htmlandcss"><span class="booktitle">HTML and CSS.</span> Elizabeth Castro and Bruce Hyslop</a></li>
+                        <li><a href="books.html#databasesystems"><span class="booktitle">Database Systems.</span> Hector Garcia-molina, Jeffery D. Ullman and Jennifer Widom</a></li>
+                        <li><a href="books.html#javaprogramming"><span class="booktitle">Introduction to Java Programming.</span> Daniel Liang</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- END SIDE BAR -->
+
+            <!-- START FOOTER -->
+            <footer role="contentinfo">
+                <nav role="navigation">
+                    <ul class="nav-footer">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <p> &COPY; 2015 By Derek Williams. All Rights Reserved. </p>
+            </footer>
+            <!-- END FOOTER -->
+        </div>
+    </body>
+</html>
